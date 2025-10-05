@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Čau kokote</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        font-size: 5rem;
+        font-weight: bold;
+        color: white;
+        animation: backgroundFlash 5s infinite alternate;
+    }
+
+    @keyframes backgroundFlash {
+        0% { background-color: red; }
+        25% { background-color: blue; }
+        50% { background-color: green; }
+        75% { background-color: purple; }
+        100% { background-color: orange; }
+    }
+
+    h1 {
+        animation: floatText 3s ease-in-out infinite alternate;
+        text-shadow: 0 0 20px black;
+    }
+
+    @keyframes floatText {
+        0% { transform: translateY(-20px); }
+        100% { transform: translateY(20px); }
+    }
+</style>
+</head>
+<body>
+    <h1>TY JSI KOKOT</h1>
+</body>
+</html>
